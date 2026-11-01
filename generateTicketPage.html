@@ -1,0 +1,225 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+    />
+    <link rel="stylesheet" href="/styles/generateTicketPage.css" />
+    <title>EVENTIX</title>
+  </head>
+  <body>
+    <header>
+      <nav>
+        <h2>EVENTIX</h2>
+        <ul>
+          <li><a href="/index.html">Home</a></li>
+          <li><a href="/event.html">Events</a></li>
+          <li><a href="/generateTicketPage.html">Generate Ticket</a></li>
+          <li><a href="/about.html">About</a></li>
+          <li><a href="/contact.html">Contact</a></li>
+        </ul>
+        <a href="/signup-loginPage.html">
+          <button id="sign-in">Sign in</button>
+        </a>
+      </nav>
+    </header>
+    <div class="container">
+      <!-- LEFT SIDE -->
+      <div class="form-section">
+        <h1>Create New Ticket</h1>
+
+        <p>Fill in the details below to generate your premium event passes.</p>
+
+        <form action="/event.html">
+          <div class="form-group">
+            <label>EVENT NAME</label>
+            <input type="text" placeholder="e.g. Champions League Finals" />
+          </div>
+
+          <div class="row">
+            <div class="form-group">
+              <label>VENUE</label>
+              <input type="text" placeholder="Puskas Arena, Budapest" />
+            </div>
+
+            <div class="form-group">
+              <label>DATE</label>
+              <input type="date" />
+            </div>
+          </div>
+
+          <div class="row">
+            <div class="form-group">
+              <label>ORGANIZER NAME</label>
+              <input type="text" placeholder="UEFA" />
+            </div>
+          </div>
+
+          <div class="ticket-categories">
+            <div class="section-title">Ticket Categories</div>
+            <!-- Category 1 -->
+            <div class="ticket-category">
+              <div class="ticket-header">
+                <input type="checkbox" checked />
+                <span>Standard Access</span>
+              </div>
+
+              <div class="row">
+                <div class="form-group">
+                  <label>PRICE ($)</label>
+                  <input type="number" placeholder="150" />
+                </div>
+
+                <div class="form-group">
+                  <label>QUANTITY</label>
+                  <input type="number" placeholder="100" />
+                </div>
+              </div>
+            </div>
+            <!-- Category 2 -->
+            <div class="ticket-category">
+              <div class="ticket-header">
+                <input type="checkbox" />
+                <span>VIP Access</span>
+              </div>
+
+              <div class="row">
+                <div class="form-group">
+                  <label>PRICE ($)</label>
+                  <input type="number" placeholder="450" />
+                </div>
+
+                <div class="form-group">
+                  <label>QUANTITY</label>
+                  <input type="number" placeholder="500" />
+                </div>
+              </div>
+            </div>
+            <!-- Category 3 -->
+            <div class="ticket-category">
+              <div class="ticket-header">
+                <input type="checkbox" />
+                <span>VVIP Access</span>
+              </div>
+
+              <div class="row">
+                <div class="form-group">
+                  <label>PRICE ($)</label>
+                  <input type="number" placeholder="1200" />
+                </div>
+
+                <div class="form-group">
+                  <label>QUANTITY</label>
+                  <input type="number" placeholder="50" />
+                </div>
+              </div>
+            </div>
+
+            <button type="button" class="add-category-btn">
+              + Add Ticket Category
+            </button>
+          </div>
+
+          <!-- UPLOAD -->
+
+          <label class="upload-box">
+            <input type="file" hidden />
+
+            <i class="fa-solid fa-cloud-arrow-up"></i>
+
+            <h3>Click or drag to upload banner image</h3>
+
+            <p>Recommended: 1200x400px</p>
+          </label>
+          <button type="submit" class="launch-btn">
+            Generate & Launch Tickets
+          </button>
+        </form>
+      </div>
+
+      <!-- RIGHT SIDE -->
+      <div class="preview-section">
+        <div class="preview-header">
+          <h2>Live Preview</h2>
+
+          <span class="status">
+            <span class="dot"></span>
+            Real-time sync
+          </span>
+        </div>
+
+        <!-- TICKET -->
+
+        <div class="ticket-card">
+          <div class="banner">
+            <span class="badge"> VIP ACCESS </span>
+
+            <h2>Champions League Finals</h2>
+          </div>
+
+          <div class="ticket-content">
+            <div class="info-grid">
+              <div>
+                <span>VENUE</span>
+                <p>Puskas Arena, Budapest</p>
+              </div>
+
+              <div>
+                <span>DATE</span>
+                <p>May 30, 2026</p>
+              </div>
+
+              <div>
+                <span>PRICE</span>
+                <p>$150.00 | $450.00 | $1200.00</p>
+              </div>
+
+              <div>
+                <span>ORGANIZER</span>
+                <p>UEFA</p>
+              </div>
+            </div>
+
+            <div class="ticket-footer">
+              <div class="qr">QR</div>
+
+              <div class="barcode"></div>
+            </div>
+          </div>
+        </div>
+
+        <div class="actions">
+          <button>
+            <i class="fa-solid fa-download"></i>
+            Download Draft
+          </button>
+
+          <button>
+            <i class="fa-solid fa-share-nodes"></i>
+            Share Preview
+          </button>
+        </div>
+      </div>
+    </div>
+    <footer>
+      <div class="name_copyright">
+        <h3>EVENTIX</h3>
+        <p>&copy; 2026 EVENTIX. All rights reserved.</p>
+      </div>
+      <div class="quick-links">
+        <a>Privacy Policy</a>
+        <a>Terms of Service</a>
+        <a>FAQ</a>
+        <a>Support</a>
+      </div>
+      <div class="icons">
+        <i class="fab fa-facebook"></i>
+        <i class="fab fa-linkedin"></i>
+        <i class="fab fa-instagram"></i>
+      </div>
+    </footer>
+  </body>
+</html>

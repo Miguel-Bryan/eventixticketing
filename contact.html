@@ -1,0 +1,117 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.8.2/css/all.css"
+    />
+    <link rel="stylesheet" href="/styles/contact.css" />
+    <title>EVENTIX</title>
+  </head>
+  <body>
+    <nav>
+      <h2>EVENTIX</h2>
+      <ul>
+        <li><a href="/index.html">Home</a></li>
+        <li><a href="/event.html">Events</a></li>
+        <li><a href="">Generate Ticket</a></li>
+        <li><a href="/about.html">About</a></li>
+        <li><a href="/contact.html">Contact</a></li>
+      </ul>
+      <a href="/signup-loginPage.html">
+        <button id="sign-in">Sign in</button>
+      </a>
+    </nav>
+    <main>
+      <div class="contact-main-container">
+        <div class="contact-left">
+          <p id="premium">CONCIERGE SUPPORT</p>
+          <h2>Contact Us</h2>
+          <p>
+            Our dedicated concierge team is available 24/7 to ensure your
+            front-row experience is seamless, secure, and extraordinary.
+          </p>
+          <div class="assistance-access">
+            <div class="assistance">
+              <div class="symbol">&#10067;</div>
+              <div>
+                <h3>Direct Assistance</h3>
+                <p>Priority ticketing and event logistics support.</p>
+              </div>
+            </div>
+            <div class="assistance">
+              <div id="symbol2">&#128737;</div>
+              <div>
+                <h3>Secure Access</h3>
+                <p>End-to-end encrypted communication channels.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="contact-right">
+          <form action="">
+            <div class="personal-info">
+              <div class="name">
+                <label for="name">NAME </label>
+                <input
+                  type="text"
+                  id="name"
+                  placeholder="Bryan Kongne"
+                  required
+                />
+              </div>
+              <div class="email">
+                <label for="email">EMAIL </label>
+                <input
+                  type="email"
+                  id="email"
+                  placeholder="bryan.kongne@eventix.com"
+                  required
+                />
+              </div>
+            </div>
+            <div class="subject">
+              <label for="comment">SUBJECT </label>
+              <select id="comment" required>
+                <option value="" disabled selected id="option">
+                  Select a subject
+                </option>
+                <option value="general">General Inquiry</option>
+                <option value="support">Technical Support</option>
+                <option value="feedback">Feedback</option>
+              </select>
+            </div>
+            <div class="message">
+              <label for="message">MESSAGE </label>
+              <textarea
+                id="message"
+                placeholder="How can we elevate your experience?"
+                required
+              ></textarea>
+            </div>
+            <button type="submit">Send Message &#9992;</button>
+          </form>
+        </div>
+      </div>
+    </main>
+    <footer>
+      <div class="name_copyright">
+        <h3>EVENTIX</h3>
+        <p>&copy; 2026 EVENTIX. All rights reserved.</p>
+      </div>
+      <div class="quick-links">
+        <a>Privacy Policy</a>
+        <a>Terms of Service</a>
+        <a>FAQ</a>
+        <a>Support</a>
+      </div>
+      <div class="icons">
+        <i class="fab fa-facebook"></i>
+        <i class="fab fa-linkedin"></i>
+        <i class="fab fa-instagram"></i>
+      </div>
+    </footer>
+  </body>
+</html>

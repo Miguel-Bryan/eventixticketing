@@ -1,0 +1,333 @@
+/*======= GLOBAL =======*/
+* {
+  font-family: "poppins", sans-serif;
+  margin: 0;
+  color: white;
+}
+html {
+  background-color: black;
+}
+a {
+  text-decoration: none;
+  color: white;
+}
+li {
+  list-style: none;
+}
+button {
+  padding: 1% 1.3%;
+  border: none;
+  border-radius: 3px;
+}
+span {
+  color: #d62828;
+  font-weight: bold;
+}
+
+/*======= Nav Section =======*/
+nav {
+  background-color: #000;
+  border-radius: 7px;
+  border-bottom: 0.5px solid #141517;
+  height: 10vh;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  /* position: fixed; */
+  width: 100%;
+  z-index: 1000;
+}
+nav h2 {
+  color: white;
+  font-size: 32px;
+  font-weight: 700;
+  margin-left: 20px;
+}
+nav ul {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+}
+nav ul li a:hover {
+  color: #d62828;
+  transition: 0.2s ease-in-out;
+  padding-bottom: 10px;
+  border-bottom: 2px solid #d62828;
+}
+#sign-in {
+  background-color: #d62828;
+  color: white;
+  font-weight: 500;
+  width: 100px;
+  height: 6vh;
+  margin-right: 20px;
+}
+/*======= Hero Section =======*/
+.hero {
+  margin-left: 3rem;
+  margin-top: 1rem;
+  width: 45%;
+}
+.hero h1 {
+  font-size: 50px;
+  font-weight: 700;
+}
+.hero p {
+  font-size: 15px;
+  padding-top: 0.5rem;
+  padding-left: 0.2rem;
+  color: lightslategray;
+}
+#premium {
+  color: grey;
+  font-size: 15px;
+  padding-bottom: 5px;
+  padding-left: 0.2rem;
+  font-weight: 700;
+}
+/*======= Cards Section =======*/
+.cards {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  padding: 3rem;
+  padding-top: 3rem;
+  padding-right: 0;
+}
+.card {
+  border: 2px solid #191a24;
+  border-radius: 10px;
+  display: flex;
+  width: 90%;
+  flex-direction: column;
+  overflow: hidden;
+  margin-top: 1rem;
+  transition: transform 0.5s ease-in-out;
+}
+#card1 .card-top {
+  background:
+    linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.4)),
+    url(/images/card-images/soccer-stadium.jpg) no-repeat;
+  background-size: cover;
+  background-position: center;
+  height: 35vh;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  transition: transform 0.5s ease-in-out;
+}
+#card2 .card-top {
+  background:
+    linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.4)),
+    url(/images/card-images/concert-image1.jpg) no-repeat;
+  background-size: cover;
+  background-position: bottom;
+  height: 35vh;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  transition: transform 0.5s ease-in-out;
+}
+#card3 .card-top {
+  background:
+    linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.4)),
+    url(/images/card-images/prom-image.jpg) no-repeat;
+  background-size: cover;
+  background-position: bottom;
+  height: 35vh;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  transition: transform 0.5s ease-in-out;
+}
+#card4 .card-top {
+  background:
+    linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.4)),
+    url(/images/card-images/concert-image2.jpeg) no-repeat;
+  background-size: cover;
+  background-position: bottom;
+  height: 35vh;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  transition: transform 0.5s ease-in-out;
+}
+.card-top div {
+  width: 10%;
+  height: 2vh;
+  display: flex;
+  justify-content: center;
+  background-color: #d62828;
+  border-radius: 15px;
+  padding: 5px 5px;
+  margin: 10px 10px;
+}
+.card:hover {
+  .card-top {
+    transform: scale(1.1);
+  }
+  /* transform: translateY(-5px); */
+}
+.card-top div p {
+  font-size: 10px;
+}
+.card-bottom {
+  border: 2px solid #191a24;
+  background-color: #191a24;
+  display: flex;
+  gap: 10px;
+  flex-direction: column;
+  align-items: center;
+  padding: 1rem;
+  padding-top: 2rem;
+  z-index: 1000;
+}
+.event-info {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+.event-info-left {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+.event-info-left h3 {
+  font-size: 20px;
+  font-weight: 600;
+}
+.event-info-left p,
+.event-info-right p {
+  font-size: 12.5px;
+  color: grey;
+}
+.event-info-right {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+.ticket-category {
+  display: flex;
+  gap: 7px;
+  justify-content: space-between;
+  width: 100%;
+  padding-top: 0.5rem;
+}
+.category {
+  flex: 1;
+  background-color: #201e20;
+  border: 2px solid #272427;
+  font-weight: 500;
+  width: 110px;
+  padding: 0.6rem 1rem;
+  border-radius: 5px;
+  text-align: center;
+}
+#selected {
+  background-color: #2b2c43;
+  p {
+    color: #212236;
+  }
+}
+.category h4 {
+  font-size: 10px;
+  font-weight: 600;
+  margin-bottom: 3px;
+  color: grey;
+}
+button {
+  margin-top: 15px;
+  height: 7vh;
+  background-color: #d62828;
+  font-weight: 800;
+  width: 100%;
+  transition: 0.2s ease-in-out;
+  opacity: 0.9;
+  border-radius: 10px;
+}
+button:hover {
+  opacity: 1;
+}
+.card a {
+  width: 100%;
+}
+/*======= CTA Section =======*/
+.CTA {
+  background-color: #201e20;
+  margin: 3rem 3rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 4rem;
+  border-radius: 10px;
+}
+.CTA form {
+  margin-top: 2rem;
+  display: flex;
+  gap: 10px;
+  align-items: end;
+}
+.CTA form input {
+  padding: 0.7% 1.3%;
+  width: 20rem;
+  height: 5vh;
+  margin-bottom: 2px;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  border-radius: 7px;
+  background-color: rgba(255, 255, 255, 0.2);
+  color: #fff;
+}
+.CTA form input:hover {
+  border: 1px solid rgba(214, 40, 40, 0.4);
+}
+.CTA h2 {
+  font-size: 30px;
+  font-weight: 600;
+}
+.CTA button {
+  background-color: #c4c4df;
+  color: #201e20;
+  font-weight: 500;
+  width: 30%;
+  height: 7vh;
+  transition: 0.2s ease-in-out;
+}
+/*======Footer Section ======*/
+footer {
+  background-color: #000;
+  /* border-top: 0.5px solid #36454f; */
+  height: 15vh;
+  align-items: center;
+  display: flex;
+  justify-content: space-between;
+  padding-left: 2rem;
+  padding-right: 2rem;
+  border-top: 1px solid #141517;
+}
+.name_copyright {
+  line-height: 1.5;
+}
+.name_copyright p {
+  color: grey;
+  font-size: 14px;
+}
+.quick-links {
+  display: flex;
+  justify-content: space-between;
+  width: 30%;
+}
+.quick-links a {
+  color: grey;
+  font-size: 14px;
+  font-weight: 500;
+  transition: 0.4s ease-in-out;
+}
+.quick-links a:hover {
+  cursor: pointer;
+  border-bottom: 1.5px solid grey;
+}
+.icons {
+  display: flex;
+  justify-content: space-between;
+  width: 10%;
+  /* gap: 40px; */
+}
+.icons i:hover {
+  color: #d62828;
+  border-radius: 15px;
+}

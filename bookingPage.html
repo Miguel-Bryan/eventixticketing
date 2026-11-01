@@ -1,0 +1,117 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/styles/bookingPage.css" />
+    <title>EVENTIX</title>
+  </head>
+  <body>
+    <header>
+      <nav>
+        <h2>EVENTIX</h2>
+        <ul>
+          <li><a href="/index.html">Home</a></li>
+          <li><a href="/event.html">Events</a></li>
+          <li><a href="">Generate Ticket</a></li>
+          <li><a href="/about.html">About</a></li>
+          <li><a href="/contact.html">Contact</a></li>
+        </ul>
+        <a href="/signup-loginPage.html">
+          <button id="sign-in">Sign in</button>
+        </a>
+      </nav>
+    </header>
+    <main>
+      <div class="container">
+        <div class="header">
+          <h1>Complete Your Booking</h1>
+          <p>Secure checkout for "Champions League Final"</p>
+        </div>
+
+        <div class="checkout-wrapper">
+          <!-- LEFT CARD -->
+          <div class="summary-card">
+            <div class="event-image">
+              <img src="/images/card-images/soccer-stadium.jpg" alt="" />
+              <span class="badge">VVIP ACCESS</span>
+            </div>
+
+            <div class="price-row">
+              <span>1x Early Bird Ticket</span>
+              <span id="span1">$1200.00</span>
+            </div>
+
+            <div class="price-row">
+              <span>Processing Fee</span>
+              <span id="span1">$12.50</span>
+            </div>
+
+            <div class="divider"></div>
+
+            <div class="total-row">
+              <span>Total</span>
+              <span id="span1">$1212.50</span>
+            </div>
+          </div>
+
+          <!-- RIGHT CARD -->
+          <div class="payment-card">
+            <h4>SELECT PAYMENT METHOD</h4>
+
+            <div class="payment-methods">
+              <button class="method active">Visa</button>
+
+              <button class="method">MTN</button>
+
+              <button class="method">Orange</button>
+            </div>
+
+            <div class="form-group">
+              <label>CARDHOLDER NAME</label>
+              <input type="text" placeholder="Stessy Nguessi" />
+            </div>
+
+            <div class="form-group">
+              <label>CARD NUMBER</label>
+              <input type="text" placeholder="**** **** **** 4242" />
+            </div>
+
+            <div class="row">
+              <div class="form-group">
+                <label>EXPIRY DATE</label>
+                <input type="text" placeholder="MM/YY" />
+              </div>
+
+              <div class="form-group">
+                <label>CVV</label>
+                <input type="password" placeholder="***" />
+              </div>
+            </div>
+
+            <a href="/successfulPaymentPage.html">
+              <button class="pay-btn">Pay $1212.50</button></a
+            >
+          </div>
+        </div>
+      </div>
+    </main>
+    <footer>
+      <div class="name_copyright">
+        <h3>EVENTIX</h3>
+        <p>&copy; 2026 EVENTIX. All rights reserved.</p>
+      </div>
+      <div class="quick-links">
+        <a>Privacy Policy</a>
+        <a>Terms of Service</a>
+        <a>FAQ</a>
+        <a>Support</a>
+      </div>
+      <div class="icons">
+        <i class="fab fa-facebook"></i>
+        <i class="fab fa-linkedin"></i>
+        <i class="fab fa-instagram"></i>
+      </div>
+    </footer>
+  </body>
+</html>

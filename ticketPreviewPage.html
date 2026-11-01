@@ -1,0 +1,85 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+    />
+    <link rel="stylesheet" href="/styles/ticketPreviewPage.css" />
+    <title>EVENTIX</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="header">
+        <h1>Your Digital Pass</h1>
+        <p>Present this ticket at the entrance for verification.</p>
+      </div>
+
+      <div class="ticket">
+        <!-- LEFT SECTION -->
+        <div class="ticket-left">
+          <div class="brand">
+            <div class="logo">EVTX</div>
+            <span>EVENTIX PLATINUM</span>
+          </div>
+
+          <h2>Champions League Final</h2>
+
+          <div class="details-grid">
+            <div>
+              <label>ATTENDEE</label>
+              <p>Nguessi Stessy</p>
+            </div>
+
+            <div>
+              <label>CATEGORY</label>
+              <p>VVIP</p>
+            </div>
+
+            <div>
+              <label>DATE & TIME</label>
+              <p>May 30, 2026 • 5:00 PM</p>
+            </div>
+
+            <div>
+              <label>VENUE</label>
+              <p>Puskas Arena</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- RIGHT SECTION -->
+        <div class="ticket-right">
+          <div class="qr-container">
+            <img
+              src="https://api.qrserver.com/v1/create-qr-code/?size=200x200&data=EVENT123"
+              alt="QR Code"
+            />
+          </div>
+
+          <span class="ticket-id-title"> TICKET ID </span>
+
+          <h3>#JD-98231</h3>
+
+          <div class="barcode"></div>
+        </div>
+      </div>
+
+      <div class="actions">
+        <button class="download-btn">
+         <a href="/event.html"> <i class="fa-solid fa-download"></i>
+          Download E-Ticket
+         </a>
+        </button>
+
+        <button class="email-btn">
+         <a href="/event.html"> <i class="fa-regular fa-envelope"></i>
+          Email Ticket
+         </a>
+        </button>
+      </div>
+    </div>
+  </body>
+</html>
